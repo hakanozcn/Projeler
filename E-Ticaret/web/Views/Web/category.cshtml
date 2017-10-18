@@ -1,0 +1,56 @@
+﻿@model IList<Web.DTO.Product.ProductlistDTO>
+@{
+    ViewBag.Title = "category";
+
+}
+<div class="container">
+    <!-- Page Heading -->
+    <h1 class="my-4">
+        Page Heading
+        <small>Secondary Text</small>
+    </h1>
+    <div class="row">
+        @foreach (var item in Model)
+            {
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+                <div class="card h-75">
+                    <a href="#"><img class="card-img-top " src=@item.İmageurl alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">@item.name</a>
+                        </h4>
+                        <div>indirim:%@item.discount_rate</div>
+
+                        <div>Fiyat:@item.Price</div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+

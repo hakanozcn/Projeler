@@ -1,0 +1,25 @@
+﻿@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal ">
+        <div class="form-group ">
+            @Html.LabelFor(model => model.bloggers.Username, htmlAttributes: new { @class = "floatLabel" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.bloggers.Username, new { htmlAttributes = new { @class = "floatLabel" } })
+                @Html.ValidationMessageFor(model => model.bloggers.Username, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.bloggers.Password, htmlAttributes: new { @class = "floatLabel" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.bloggers.Password, new { htmlAttributes = new { @class = "floatLabell" } })
+                @Html.ValidationMessageFor(model => model.bloggers.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Giris" class="btn btn-default" />
+            </div>
+        </div>
+    </div>

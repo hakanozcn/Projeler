@@ -1,0 +1,54 @@
+﻿@model IEnumerable<websitedb.data.dataclass.duyulular>
+
+@{  Layout = "~/Views/bloggers/_Layoutadmin.cshtml ";
+}
+<div>@Html.ActionLink("ADD", "DuyuruAdd", "bloggers")</div>
+
+
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th> Bloger</th>
+            <th> @Html.DisplayNameFor(model=>model.Description)</th>
+            <th> @Html.DisplayNameFor(model => model.Updatetime)</th>
+        </tr>
+
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Blogerid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Updatetime)
+                </td>
+                <td>
+
+                    
+                    @Html.ActionLink("Delete", "DuyuruDelete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+
+
+</div>
+

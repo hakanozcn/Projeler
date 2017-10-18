@@ -1,0 +1,220 @@
+﻿@model websit.Models.İndexview
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+<div class="container">
+    <!-- Portfolio Item Heading -->
+    
+    <!-- /.row -->
+    <!-- Portfolio Item Row -->
+    <div class="row sliderr">
+        <div class="col-md-8 col-lg-8">
+            <div class="slider">
+                <a href="#" class="onceki"><</a>
+                <a href="#" class="sonraki">></a>
+                <ul class="slider_liste">
+
+                    @foreach (var item in Model.Slider)
+
+                    {
+
+                    <li>
+                        <a href="#">
+                            <img  class="imj" src=@item.İmg alt=@item.Title />
+                        </a>
+                    </li>
+                    }
+                  
+                    
+                    
+                    
+
+
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-4  blooger">
+            <table style="border-collapse: collapse;">
+                <tr style=" padding:3px; margin:3px;">
+                    <th style="padding:3px; margin:3px;">
+                        title
+                    </th>
+                    
+                    
+                    <th style="padding:3px; margin:3px;"> Bloger</th>
+                    <th style="padding:3px; margin:3px;"> Makale OKU</th>
+                </tr>
+                @foreach (var item in Model.Yazilar)
+                {
+                    <tr style="padding:3px; margin:3px;">
+                        <th style="padding:3px; margin:3px;">@item.Baslik</th>
+                        <th style="padding:3px; margin:3px;">Hakan</th>
+                        <th style="padding:3px; margin:3px;"><a href="/Home/Makaledetail?id=@item.ID"> Makale oku</a></th>
+
+
+                    </tr>
+                }
+                
+            </table>          
+            </div>
+        </div>
+       
+    
+    <!-- /.row -->
+    <!-- Related Projects Row -->
+    <div class="row">
+        <div class="col-md-4 altpalen">
+            
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-calendar"> </span>
+                        Etkillik
+                    </h3>
+                </div>
+               
+                <div class="panel-body">
+
+                    <ul class="media-list">
+@foreach (var item in Model.Etkinlik)
+{
+                        <li class="media">
+                            <div class="media-left ">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong">
+                                            @item.Updatetime.Month.ToString()
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body text-danger day">
+                                        @item.Updatetime.Day.ToString()
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                   @item.Title
+                                </h4>
+                                <p>@item.Description</p>
+
+                            </div>
+                        </li>
+}
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 altpalen">
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-bullhorn"> </span>
+                        Duyuru
+                    </h3>
+                </div>
+                <div class="panel-body">
+                  
+                    <ul class="media-list">
+@foreach (var item in Model.Duyulular)
+{
+                        <li class="media">
+                            <div class="media-left ">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong">
+                                            @item.Updatetime.Month
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body text-danger day">
+                                        @item.Updatetime.Day
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                   @item.Title
+                                </h4>
+                                <p>@item.Description</p>
+
+                            </div>
+                        </li>
+}
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 altpalen ">
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-calendar"> </span>
+                        Etkillik
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="media-list">
+                        <li class="media">
+                            <div class="media-left ">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong">
+                                            mar
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body text-danger day">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    asd
+                                </h4>
+                                <p>asdasdasdasdasdasd</p>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left ">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong">
+                                            mar
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body text-danger day">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    asd
+                                </h4>
+                                <p>asdasdasdasdasdasd</p>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     </div>
+</div>

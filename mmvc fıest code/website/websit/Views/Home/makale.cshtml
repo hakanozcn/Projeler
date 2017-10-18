@@ -1,0 +1,58 @@
+﻿@model websit.Models.Makaleview
+
+<div>
+    <table class="table">
+        <tr>
+
+            <th>
+                RESim
+            </th>
+            <th>
+               BASLIK
+            </th>
+            <th>
+               BLOGERID
+            </th>
+            <th>
+                CATEGORYID
+            </th>
+
+            <th>
+               UPDATETİME
+            </th>
+
+            <th></th>
+
+
+
+
+
+            @foreach (var item in Model.Makaleler)
+            {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(ModelItem => item.img)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Baslik)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BlogerID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryiD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Updatetime)
+                </td>
+               
+                <td>
+                    <a href="/Home/Makaledetail?id=@item.ID"> Makale oku</a>
+                </td>
+                </tr>
+            }
+
+                </table>
+           
+                </div>

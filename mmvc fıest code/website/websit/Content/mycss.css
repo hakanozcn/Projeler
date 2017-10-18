@@ -1,0 +1,78 @@
+﻿body{
+    background-color:lightgrey;
+    
+}
+body text{
+    border:1px;
+
+}
+.link {
+    padding: 10px 15px;
+    margin-top: auto;
+    background-color: #222;
+    border-color: #080808;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.altpalen{
+    
+    margin-top:10px;
+
+
+
+}
+.imj{
+    width:1200px;
+    height:500px;
+    background-position:center;
+    background-size:cover;
+}
+.blooger{
+    height:100%;
+    float:left;
+    margin-bottom:auto;
+
+
+}
+
+
+.sliderr{
+    width:1200px!important;
+    height:500px!important;
+
+
+}
+.adminbody{
+    width:100% !important;
+    height:100% !important;
+    padding-top:0px !important;
+    margin-top:0px !important;
+}
+.pannid0{
+    padding:0px !important;
+    margin:0px !important;
+}
+.padding20{
+    padding:20px 20px !important;
+    margin:20px;
+}
+.Makale {
+    font-family: Verdana, monospace, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-align: justify !important;
+    max-height: 800px !important;
+}
+.Makale_img{
+    position:center!important;
+    width:  350px!important;
+    height: 300px!important;
+    padding: 20px!important;
+    background-color: #959595!important;
+    position: relative!important;
+    margin: auto!important;
+}
+
+

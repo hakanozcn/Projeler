@@ -1,0 +1,44 @@
+﻿@model websit.Models.Makaledetailview
+
+
+<div style="
+        margin: 0 auto;
+        width:960px;
+        ">
+    </div>
+    @if (Model != null)
+    {
+
+
+        <div style="margin: 0 auto;
+                    width:960px;
+                   padding-left:50px; padding-bottom:20px ">
+            <img src=@Model.Makale.img alt="" style="width:500px;height:350px; padding-bottom:10px;" />
+
+
+
+            <h3 class="bd-title middle" style="padding-bottom:10px;   ">@Model.Makale.Baslik</h3>
+
+
+
+
+            <p class="p-1">@Model.Makale.İcerik</p>
+
+
+        </div>
+
+        <div>
+           <h3> @Model.Makale.bloggerID.Name<br />
+                </h3>
+
+        </div>
+
+
+    }
+
+
+
+<div style=" margin: 0 auto;
+             width:960px;
+        ">
+    </div>

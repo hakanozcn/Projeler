@@ -1,0 +1,68 @@
+﻿@model IEnumerable<websitedb.data.dataclass.slider>
+@{
+    Layout = "~/Views/bloggers/_Layoutadmin.cshtml ";
+}
+
+<!DOCTYPE html>
+
+<div class="col-md-3">@Html.ActionLink("ADD", "Slideradd","bloggers")</div>
+  
+    <div>
+        <table class="table">
+            <tr>
+                
+                <th>
+                    @Html.DisplayNameFor(model => model.İmg)
+                    </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Yazi)
+                </th>
+                
+                <th>
+                    @Html.DisplayNameFor(model => model.Updatetime)
+                </th>
+                
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="img-rounded">
+                        <img src=@item.İmg  alt="" class="img-rounded" style="width:100px;height:150px;"/>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Yazi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Updatetime)
+                    </td>
+                    
+                    
+                    <td>
+                        @Html.ActionLink("Edit", "sliderEdit", new { id = item.ID }) |
+                        
+                        @Html.ActionLink("Delete", "sliderDelete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+
+
+
+    </div>
+

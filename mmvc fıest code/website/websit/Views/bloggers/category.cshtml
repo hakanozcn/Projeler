@@ -1,0 +1,45 @@
+﻿@model IEnumerable<websitedb.data.dataclass.category>
+@{
+    Layout = "~/Views/bloggers/_Layoutadmin.cshtml ";
+}
+
+<div>@Html.ActionLink("ADD","categoryadd","bloggers")</div>
+
+
+    <div>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Categoryname)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Categoryname)
+                    </td>
+                    <td>
+                       
+                      @Html.ActionLink("detail", "categorydetail", new { id = item.ID })|
+                        @Html.ActionLink("Delete", "categoryDelete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+
+
+
+    </div>
+
+

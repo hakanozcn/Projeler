@@ -1,0 +1,13 @@
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\websitedb.data.dll.config
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\websitedb.data.dll
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\websitedb.data.pdb
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\EntityFramework.dll
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\EntityFramework.xml
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\obj\Debug\websitedb.data.dll
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\obj\Debug\websitedb.data.pdb
+C:\Users\hakan\Desktop\calısmalar\mmvc fıest code\website\websitedb.data\obj\Debug\websitedb.data.csprojResolveAssemblyReference.cache

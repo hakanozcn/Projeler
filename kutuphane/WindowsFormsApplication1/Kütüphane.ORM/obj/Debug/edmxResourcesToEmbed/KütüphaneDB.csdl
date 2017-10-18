@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KütüphaneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Bookname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WriderID" Type="Int32" />
+    <NavigationProperty Name="CategoryBook" Relationship="Self.Fk_BokID" FromRole="Books" ToRole="CategoryBook" />
+    <NavigationProperty Name="Userbook" Relationship="Self.Fk_BookID" FromRole="Books" ToRole="Userbook" />
+  </EntityType>
+  <EntityType Name="categories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CategoryBook" Relationship="Self.Fk_UCategoryID" FromRole="categories" ToRole="CategoryBook" />
+  </EntityType>
+  <EntityType Name="CategoryBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.Fk_BokID" FromRole="CategoryBook" ToRole="Books" />
+    <NavigationProperty Name="categories" Relationship="Self.Fk_UCategoryID" FromRole="CategoryBook" ToRole="categories" />
+  </EntityType>
+  <EntityType Name="Userbook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.Fk_BookID" FromRole="Userbook" ToRole="Books" />
+    <NavigationProperty Name="Users" Relationship="Self.Fk_UserID" FromRole="Userbook" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Userbook" Relationship="Self.Fk_UserID" FromRole="Users" ToRole="Userbook" />
+  </EntityType>
+  <EntityType Name="Writer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="Fk_BokID">
+    <End Role="Books" Type="Self.Books" Multiplicity="1" />
+    <End Role="CategoryBook" Type="Self.CategoryBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CategoryBook">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_BookID">
+    <End Role="Books" Type="Self.Books" Multiplicity="1" />
+    <End Role="Userbook" Type="Self.Userbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Userbook">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_UCategoryID">
+    <End Role="categories" Type="Self.categories" Multiplicity="1" />
+    <End Role="CategoryBook" Type="Self.CategoryBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CategoryBook">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_UserID">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Userbook" Type="Self.Userbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Userbook">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KütüphaneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Books" />
+    <EntitySet Name="categories" EntityType="Self.categories" />
+    <EntitySet Name="CategoryBook" EntityType="Self.CategoryBook" />
+    <EntitySet Name="Userbook" EntityType="Self.Userbook" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="Writer" EntityType="Self.Writer" />
+    <AssociationSet Name="Fk_BokID" Association="Self.Fk_BokID">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="CategoryBook" EntitySet="CategoryBook" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_BookID" Association="Self.Fk_BookID">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Userbook" EntitySet="Userbook" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_UCategoryID" Association="Self.Fk_UCategoryID">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="CategoryBook" EntitySet="CategoryBook" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_UserID" Association="Self.Fk_UserID">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Userbook" EntitySet="Userbook" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

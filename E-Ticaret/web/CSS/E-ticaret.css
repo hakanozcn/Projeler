@@ -1,0 +1,55 @@
+﻿.main-header {
+    background-color: #959595 !important;
+    
+}
+header div ul#list, header div ul#list ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+    header div ul#list li {
+        float: left;
+        position: relative;
+        width: 150px;
+    }
+
+        header div ul#list li ul {
+            display: none;
+            position: absolute;
+            top: 19px; /* yukseklik 15px + sonradan eklenecek paddingler 4px toplam 19px */
+            left: 0;
+        }
+        header div ul#list li > ul {
+    top: auto;
+    left: auto;
+}
+        header div ul#list li a {
+            font: bold 17px arial, helvetica, sans-serif;
+            display: block;
+            border-width: 0px;
+            border-style:  dotted;
+            border-color: #ccc #888 #555 #bbb;
+            margin: 5px;
+            padding: 8px 8px;
+            color: black;
+            background: #959595;
+            text-decoration: none;
+        }
+
+            header div ul#list li a:hover {
+                color: #a00;
+                background: #959595;
+            }
+            
+        header div ul#list li:hover ul {
+            display: block;
+        }
+        header div ul#list li:hover ul, header div ul#list li.over ul {
+            display: block;
+        }
+
+        .productimg{
+           width:700px;
+           height:400px;
+
+        }

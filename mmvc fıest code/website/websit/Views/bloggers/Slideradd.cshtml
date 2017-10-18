@@ -1,0 +1,67 @@
+﻿@model websit.sliderview
+@{
+    Layout = "~/Views/bloggers/_Layoutadmin.cshtml ";
+}
+
+<div>
+    @using (Html.BeginForm("slideradd", "bloggers", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+
+        <div class="form-horizontal">
+            <h4>Slider</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.İmg, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.İmg, new { Type = "File", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.İmg, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Yazi, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Yazi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Yazi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            
+
+
+            
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+    </div>
+
+
+
+    
+
+
+
+

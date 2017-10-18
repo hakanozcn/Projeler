@@ -1,0 +1,10 @@
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\bin\Debug\Web.DTO.dll
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\bin\Debug\Web.DTO.pdb
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\bin\Debug\Web.ORM.dll
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\bin\Debug\EntityFramework.dll
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\bin\Debug\Web.ORM.pdb
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\bin\Debug\Web.ORM.dll.config
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\bin\Debug\EntityFramework.xml
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\obj\Debug\Web.DTO.csprojResolveAssemblyReference.cache
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\obj\Debug\Web.DTO.dll
+C:\Users\hakan\Desktop\calısmalar\E-Ticaret\Web.DTO\obj\Debug\Web.DTO.pdb
