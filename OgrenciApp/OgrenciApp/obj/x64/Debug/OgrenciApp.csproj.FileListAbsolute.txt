@@ -1,0 +1,20 @@
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\bin\x64\Debug\OgrenciApp.exe.config
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\bin\x64\Debug\OgrenciApp.exe
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\bin\x64\Debug\OgrenciApp.pdb
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.csprojResolveAssemblyReference.cache
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.Form1.resources
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.Properties.Resources.resources
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.csproj.GenerateResource.Cache
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.exe
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.pdb
+C:\Users\Beste Dinç\Documents\Visual Studio 2013\Projects\OgrenciApp\OgrenciApp\bin\x64\Debug\App_Data\OgrenciDB.accdb
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\bin\x64\Debug\OgrenciApp.exe.config
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.exe
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.pdb
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\bin\x64\Debug\App_Data\OgrenciDB.accdb
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\bin\x64\Debug\OgrenciApp.exe
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\bin\x64\Debug\OgrenciApp.pdb
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.csprojResolveAssemblyReference.cache
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.Form1.resources
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.Properties.Resources.resources
+C:\Users\hakan\Desktop\OgrenciApp\OgrenciApp\obj\x64\Debug\OgrenciApp.csproj.GenerateResource.Cache

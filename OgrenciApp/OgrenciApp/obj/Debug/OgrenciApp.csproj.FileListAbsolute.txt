@@ -1,0 +1,24 @@
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\bin\Debug\OgrenciApp.exe.config
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\bin\Debug\OgrenciApp.exe
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\bin\Debug\OgrenciApp.pdb
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.csprojResolveAssemblyReference.cache
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.Form1.resources
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.Properties.Resources.resources
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.csproj.GenerateResource.Cache
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.exe
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.pdb
+c:\users\beste dinç\documents\visual studio 2013\Projects\OgrenciApp\OgrenciApp\bin\Debug\App_Data\Ogrenciler.accdb
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.csprojResolveAssemblyReference.cache
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.Form1.resources
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.Properties.Resources.resources
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.csproj.GenerateResource.Cache
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.pdb
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\App_Data\OgrenciDB.accdb
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\OgrenciApp.exe.config
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\OgrenciApp.exe
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\OgrenciApp.pdb
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\obj\Debug\OgrenciApp.exe
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\EntityFramework.dll
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\EntityFramework.xml
+C:\Users\hakan\Desktop\calısmalar\OgrenciApp\OgrenciApp\bin\Debug\EntityFramework.SqlServer.xml
